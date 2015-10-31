@@ -145,17 +145,31 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Begin.h" />
+    <ClInclude Include="Controler.h" />
+    <ClInclude Include="Karamel.h" />
+    <ClInclude Include="Kond_izdel.h" />
+    <ClInclude Include="Konfeta.h" />
+    <ClInclude Include="Shok_konf.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Suchnost.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Begin.cpp" />
+    <ClCompile Include="Controler.cpp" />
+    <ClCompile Include="Karamel.cpp" />
+    <ClCompile Include="Kond_izdel.cpp" />
+    <ClCompile Include="Konfeta.cpp" />
     <ClCompile Include="laba5.cpp" />
+    <ClCompile Include="Shok_konf.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Suchnost.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
