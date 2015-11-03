@@ -2,7 +2,7 @@
 #include "Suchnost.h"
 #include"Begin.h"
 
-Begin *head = NULL;
+Such* Such::head = NULL;
 
 void Such::set(int a, Begin* b)
 {
@@ -32,7 +32,7 @@ void Such::set(int a, Begin* b)
 	p->add(b);
 }
 
-Begin * Such::get(int a, Begin* b)
+Begin * Such::get(int a)
 {
 	int i = 1;
 	Such* p = new Such();

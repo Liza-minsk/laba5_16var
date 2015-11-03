@@ -3,13 +3,15 @@
 class Such
 {
 	
-public:
+	
+public:	
 	Begin *s;
 	static Such *head;
 	Such *next;
-	
+
+
 	virtual void set(int, Begin*);
-	virtual Begin* get(int, Begin*);
+	virtual Begin* get(int);
 	static void show();
 	virtual void del(int);
 	void add(Begin *);

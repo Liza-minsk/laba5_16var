@@ -1,12 +1,16 @@
 #include"stdafx.h"
 #include "Controler.h"
+#include"Suchnost.h"
+
+
 
 double Controler::Ves()
 {
 	double c = 0;
-	Such *p = head;
+	Such *p = new Such();
+	p->head =Such::head;
 	while (p != NULL) {
-		c += p->getVes();
+		c += p->s->getVes();
 		p = p->next;
 	}
 	return c;
@@ -14,12 +18,14 @@ double Controler::Ves()
 
 void Controler::Nushnaja_konfeta(double a, double b)
 {
-	Such *p = head;
+	/*Begin *p = head;*/
+	Such *p = new Such();
+	p->head =Such::head;
 	while (p != NULL)
 	{
-		if (p->getSahar()> a &&  p->getSahar()<b)
+		if (p->s->getSahar()> a &&  p->s->getSahar()<b)
 		{
-			p->print();
+			p->s->print();
 		}
 		p = p->next;
 

@@ -11,26 +11,26 @@ using namespace std;
 
 int main()
 {
-	Begin *h;
+	Begin *h; Such * hh = NULL;
 
 	Karamel k1(1,1,6.0,2.4," Êonfeta " );
 	h = &k1;
-	h->add(k1);
+	hh->add(h);
 
 	Karamel k2(2,2,5.4,2.2,"Konfeta");
 	h = &k2;
-	h->add();
+	hh->add(h);
 
 	Shok_konfeta sh1(1,2,7.2,1.1," Konfeta ");
 	h = &sh1;
-	h->add();
+	hh->add(h);
 
 
 	Shok_konfeta sh2(2,1,8.7,3.0," Konfeta ");
 	h = &sh2;
 
 
-	Controler con (h);
+	Controler con (hh);
 	int a, i;
 	do
 	{
@@ -45,18 +45,18 @@ int main()
 		cin >> a;
 		switch (a)
 		{
-		case 1: h->show();
+		case 1: hh->show();
 			break;
 		case 2: cout << "Nomer udal elementa \n"; 
 			cin >> i;
-			h->del(i); 
+			hh->del(i); 
 			break;
 		case 3: cout << "Nomer elementa \n";
 			cin >> i;
-			h->set(i);
+			hh->set(i,h);
 			break;
 		case 4: cout << "Nomer elementa ";
-			(h->get(i))->print();
+			(hh->get(i))->print();
 			break;
 		case 5: 
 			cout << "Ves podarka sostavljaet " <<con.Ves()<<" gramm \n";
@@ -67,7 +67,7 @@ int main()
 			}
 	} while (a!=0);
 	
-	Begin::show();
+	Such::show();
 
 
     return 0;

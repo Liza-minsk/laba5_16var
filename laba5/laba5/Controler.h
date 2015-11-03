@@ -1,11 +1,12 @@
 #pragma once
 #include "stdafx.h"
 #include "Begin.h"
-class Controler :public Such
+#include"Suchnost.h"
+class Controler 
 {
-	Begin  *b;
+	Such  *b;
 public:
-	Controler(Begin *a) { b = a; };
+	Controler(Such *a) { b = a; };
 	double Ves();	
 	void Nushnaja_konfeta(double a, double b);
 };
